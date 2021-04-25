@@ -29,6 +29,7 @@ namespace swe_3313_gui
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,7 +53,7 @@ namespace swe_3313_gui
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(459, 157);
+            this.label1.Location = new System.Drawing.Point(454, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(291, 54);
             this.label1.TabIndex = 1;
@@ -72,12 +73,13 @@ namespace swe_3313_gui
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::swe_3313_gui.Properties.Resources.Screenshot_2021_04_20_153437;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 26);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 17);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 194);
+            this.pictureBox2.Size = new System.Drawing.Size(405, 289);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // login_button
             // 
@@ -91,6 +93,7 @@ namespace swe_3313_gui
             this.login_button.TabIndex = 4;
             this.login_button.Text = "Login";
             this.login_button.UseVisualStyleBackColor = false;
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // Login
             // 

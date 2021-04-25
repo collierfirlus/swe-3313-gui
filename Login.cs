@@ -44,5 +44,15 @@ namespace swe_3313_gui
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
