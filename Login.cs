@@ -54,5 +54,10 @@ namespace swe_3313_gui
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,6 +35,7 @@ namespace swe_3313_gui
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.login_button = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -53,28 +54,28 @@ namespace swe_3313_gui
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(454, 158);
+            this.label1.Location = new System.Drawing.Point(368, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 54);
+            this.label1.Size = new System.Drawing.Size(546, 54);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Enter Password";
+            this.label1.Text = "Enter User and Pass";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(471, 254);
+            this.textBox1.Location = new System.Drawing.Point(511, 238);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(261, 34);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(405, 289);
             this.pictureBox2.TabIndex = 3;
@@ -87,7 +88,7 @@ namespace swe_3313_gui
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.login_button.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.login_button.Location = new System.Drawing.Point(548, 329);
+            this.login_button.Location = new System.Drawing.Point(586, 307);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(111, 43);
             this.login_button.TabIndex = 4;
@@ -95,12 +96,24 @@ namespace swe_3313_gui
             this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(511, 170);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(261, 34);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1264, 772);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBox1);
@@ -124,6 +137,7 @@ namespace swe_3313_gui
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button login_button;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
