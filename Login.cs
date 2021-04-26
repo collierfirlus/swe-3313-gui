@@ -52,10 +52,32 @@ namespace swe_3313_gui
 
         private void login_button_Click(object sender, EventArgs e)
         {
+            string username_input = passwordBox.Text;
+            string password_input = usernameBox.Text;
 
+            if (usernameBox.Text == "BobBilly123")
+            {
+                if (passwordBox.Text == "BobBilly321")
+                {
+                    ///login and proceed to next page
+                }
+                else
+                {
+                    InvalidCredentialsText.Text = "Invalid password. Try again.";
+                }
+            }
+            else
+            {
+                InvalidCredentialsText.Text = "Invalid username. Try again.";
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void InvalidCredentialsText_Click(object sender, EventArgs e)
         {
 
         }
