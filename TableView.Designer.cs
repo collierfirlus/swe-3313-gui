@@ -1,6 +1,9 @@
 ﻿
 namespace swe_3313_gui
 {
+    using System;
+    using System.Diagnostics;
+
     partial class TableView
     {
         /// <summary>
@@ -97,6 +100,7 @@ namespace swe_3313_gui
             this.Button1A.TabIndex = 1;
             this.Button1A.Text = "1A";
             this.Button1A.UseVisualStyleBackColor = true;
+            this.Button1A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button2A
             // 
@@ -555,6 +559,12 @@ namespace swe_3313_gui
             ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+        private void tableButtonClicked(object sender, System.EventArgs e) ///button event handler
+        {
+            string s = (sender as System.Windows.Forms.Button).Text;
+            //Debug.WriteLine("it worked " + s);
 
         }
 

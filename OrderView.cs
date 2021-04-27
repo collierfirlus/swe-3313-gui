@@ -8,17 +8,11 @@ using System.Windows.Forms;
 
 namespace swe_3313_gui
 {
-    public partial class TableView : Form
+    public partial class OrderView : Form
     {
-        public TableView()
+        public OrderView()
         {
             InitializeComponent();
         }
-
-        private void Button1A_Click(object sender, EventArgs e)
-        {
-            ///send to event handler done in TableView.Designer.cs
-        }
-
     }
 }
