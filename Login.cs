@@ -55,11 +55,14 @@ namespace swe_3313_gui
             string username_input = passwordBox.Text;
             string password_input = usernameBox.Text;
 
-            if (usernameBox.Text == "BobBilly123")
+            if (usernameBox.Text == "a")//"BobBilly123") usr & pass commented out for ease of testing, just put in a for now
             {
-                if (passwordBox.Text == "BobBilly321")
+                if (passwordBox.Text == "a")//"BobBilly321")
                 {
-                    ///login and proceed to next page
+                    ///login and proceed to next page, hide current page
+                    TableView tableView = new TableView();
+                    tableView.Show();
+                    this.Hide();
                 }
                 else
                 {
