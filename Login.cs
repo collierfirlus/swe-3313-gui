@@ -34,9 +34,10 @@ namespace swe_3313_gui
                 if (passwordBox.Text == "a")
                 {
                     ///login and proceed to next page, hide current page
+                    //TODO: change this to use dictionary to store 
                     TableView tableView = new TableView();
                     tableView.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {

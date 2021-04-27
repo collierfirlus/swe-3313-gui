@@ -20,5 +20,11 @@ namespace swe_3313_gui
             ///send to event handler done in TableView.Designer.cs
         }
 
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }

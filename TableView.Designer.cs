@@ -354,6 +354,7 @@ namespace swe_3313_gui
             this.BackButton.TabIndex = 29;
             this.BackButton.Text = "< Back";
             this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // ButtonBar1
             // 
