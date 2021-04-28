@@ -43,7 +43,13 @@ namespace swe_3313_gui
             this.label6 = new System.Windows.Forms.Label();
             this.OrderNumberLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.AddItemButton = new System.Windows.Forms.Button();
+            this.SubmitOrderChangesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -205,12 +211,70 @@ namespace swe_3313_gui
             this.label8.TabIndex = 43;
             this.label8.Text = "______________________________";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(1005, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(314, 32);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "______________________________";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(1093, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(138, 37);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "Edit Order";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Location = new System.Drawing.Point(871, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(10, 751);
+            this.pictureBox2.TabIndex = 46;
+            this.pictureBox2.TabStop = false;
+            // 
+            // AddItemButton
+            // 
+            this.AddItemButton.BackColor = System.Drawing.Color.Maroon;
+            this.AddItemButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AddItemButton.Location = new System.Drawing.Point(1029, 599);
+            this.AddItemButton.Name = "AddItemButton";
+            this.AddItemButton.Size = new System.Drawing.Size(272, 47);
+            this.AddItemButton.TabIndex = 47;
+            this.AddItemButton.Text = "Add Item";
+            this.AddItemButton.UseVisualStyleBackColor = false;
+            // 
+            // SubmitOrderChangesButton
+            // 
+            this.SubmitOrderChangesButton.BackColor = System.Drawing.Color.Maroon;
+            this.SubmitOrderChangesButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.SubmitOrderChangesButton.Location = new System.Drawing.Point(1029, 693);
+            this.SubmitOrderChangesButton.Name = "SubmitOrderChangesButton";
+            this.SubmitOrderChangesButton.Size = new System.Drawing.Size(272, 47);
+            this.SubmitOrderChangesButton.TabIndex = 48;
+            this.SubmitOrderChangesButton.Text = "Submit\r\n";
+            this.SubmitOrderChangesButton.UseVisualStyleBackColor = false;
+            // 
             // OrderView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1420, 781);
+            this.ClientSize = new System.Drawing.Size(1420, 805);
+            this.Controls.Add(this.SubmitOrderChangesButton);
+            this.Controls.Add(this.AddItemButton);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.OrderNumberLabel);
             this.Controls.Add(this.label6);
@@ -228,6 +292,7 @@ namespace swe_3313_gui
             this.Name = "OrderView";
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,5 +314,10 @@ namespace swe_3313_gui
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label OrderNumberLabel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button AddItemButton;
+        private System.Windows.Forms.Button SubmitOrderChangesButton;
     }
 }

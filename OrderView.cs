@@ -24,4 +24,9 @@ namespace swe_3313_gui
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
