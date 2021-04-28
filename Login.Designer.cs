@@ -75,7 +75,7 @@ namespace swe_3313_gui
             this.JsCornerImgBox.Image = ((System.Drawing.Image)(resources.GetObject("JsCornerImgBox.Image")));
             this.JsCornerImgBox.Location = new System.Drawing.Point(12, 12);
             this.JsCornerImgBox.Name = "JsCornerImgBox";
-            this.JsCornerImgBox.Size = new System.Drawing.Size(405, 289);
+            this.JsCornerImgBox.Size = new System.Drawing.Size(406, 289);
             this.JsCornerImgBox.TabIndex = 3;
             this.JsCornerImgBox.TabStop = false;
             // 

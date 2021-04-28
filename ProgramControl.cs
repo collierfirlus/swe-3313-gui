@@ -8,17 +8,16 @@ namespace swe_3313_gui
     {
         private Table TableCurrentlySelected = null; 
         private string ScreenCurrentlyOn;
-        private Restaurant Restaurant; 
+        private Restaurant Restaurant;
 
-        public ProgramControl()
+        private static readonly ProgramControl instance = new ProgramControl();
+
+        private ProgramControl() { }  
+
+        public static ProgramControl GetInstance()
         {
-
+            return instance;
         }
-        public ProgramControl(string placeholder )
-        {
-
-        }
-
 
 
     }
