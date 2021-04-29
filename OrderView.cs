@@ -15,18 +15,17 @@ namespace swe_3313_gui
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        protected override void OnVisibleChanged(EventArgs e)
         {
-
+            ///when the screen becomes visible, then change the text
+            base.OnVisibleChanged(e);
+            this.TableNumLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
+            ProgramControl.GetInstance().TableView.Show();
+            ProgramControl.GetInstance().OrderView.Hide();
         }
     }
+}

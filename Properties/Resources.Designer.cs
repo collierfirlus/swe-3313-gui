@@ -63,6 +63,16 @@ namespace swe_3313_gui.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JsLogoHi {
+            get {
+                object obj = ResourceManager.GetObject("JsLogoHi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2021_04_20_153437 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2021-04-20 153437", resourceCulture);

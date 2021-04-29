@@ -1,5 +1,4 @@
-﻿
-namespace swe_3313_gui
+﻿namespace swe_3313_gui
 {
     partial class OrderView
     {
@@ -58,7 +57,7 @@ namespace swe_3313_gui
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(-14, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 783);
+            this.pictureBox1.Size = new System.Drawing.Size(339, 816);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -72,7 +71,6 @@ namespace swe_3313_gui
             this.label1.Size = new System.Drawing.Size(109, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Table # ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BackButton
             // 
@@ -86,6 +84,7 @@ namespace swe_3313_gui
             this.BackButton.TabIndex = 30;
             this.BackButton.Text = "< Back";
             this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // label2
             // 
@@ -128,9 +127,8 @@ namespace swe_3313_gui
             this.TableNumLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TableNumLabel.Location = new System.Drawing.Point(175, 267);
             this.TableNumLabel.Name = "TableNumLabel";
-            this.TableNumLabel.Size = new System.Drawing.Size(49, 37);
+            this.TableNumLabel.Size = new System.Drawing.Size(0, 37);
             this.TableNumLabel.TabIndex = 34;
-            this.TableNumLabel.Text = "0A";
             // 
             // CheckOutButton
             // 
@@ -178,7 +176,6 @@ namespace swe_3313_gui
             this.label5.Size = new System.Drawing.Size(314, 32);
             this.label5.TabIndex = 38;
             this.label5.Text = "______________________________";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -231,7 +228,6 @@ namespace swe_3313_gui
             this.label9.Size = new System.Drawing.Size(138, 37);
             this.label9.TabIndex = 45;
             this.label9.Text = "Edit Order";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox2
             // 

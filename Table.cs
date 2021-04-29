@@ -6,24 +6,24 @@ namespace swe_3313_gui
 {
     class Table
     {
-        private string tableID;
+        private string tableId;
         private int capacity;
         private string status;
 
         public Table() { }
 
-        public Table(string ID, int TableCapacity)
+        public Table(string Id, int TableCapacity)
         {
-            this.tableID = ID;
+            this.tableId = Id;
             this.capacity = TableCapacity;
             status = null;
         }
 
-        public string TableID
+        public string TableId
         {
             get
             {
-                return this.tableID;
+                return this.tableId;
             }
         }
     }

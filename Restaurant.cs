@@ -4,7 +4,7 @@ using System.Text;
 
 namespace swe_3313_gui
 {
-    class Restaurant 
+    class Restaurant
     {
         List<Table> Tables = new List<Table>();
 
@@ -15,17 +15,27 @@ namespace swe_3313_gui
             Tables.Add(new Table(ID, tableCapacity));
         }
 
-        public Table GetTableByID(string TargetID)
+        public Table GetTableById(string TargetID)
         {
             Table FoundTable = null;
             foreach(Table table in Tables)
             {
-                if(table.TableID == TargetID)
+                if(table.TableId == TargetID)
                 {
                     FoundTable = table;
                 }
             }
             return FoundTable;
+        }
+
+        public void SetTables(List<Table> tables)
+        {
+            this.Tables = tables; 
+        }
+
+        public List<Table> GetTables()
+        {
+            return this.Tables;
         }
     }
 }
