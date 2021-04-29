@@ -9,6 +9,7 @@ namespace swe_3313_gui
         private string tableId;
         private int capacity;
         private string status;
+        private Order tableOrder;
 
         public Table() { }
 
@@ -19,12 +20,22 @@ namespace swe_3313_gui
             status = null;
         }
 
+        public string Status
+        {
+            set { status = value; }
+            get { return status; }
+        }
         public string TableId
         {
             get
             {
                 return this.tableId;
             }
+        }
+
+        public Order GetTableOrder()
+        {
+            return tableOrder;
         }
     }
 }

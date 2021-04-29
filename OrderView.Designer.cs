@@ -47,6 +47,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.AddItemButton = new System.Windows.Forms.Button();
             this.SubmitOrderChangesButton = new System.Windows.Forms.Button();
+            this.SubmittedOrderLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -142,6 +143,7 @@
             this.CheckOutButton.TabIndex = 35;
             this.CheckOutButton.Text = "Check Out";
             this.CheckOutButton.UseVisualStyleBackColor = false;
+            this.CheckOutButton.Click += new System.EventHandler(this.CheckOutButton_Click);
             // 
             // PrintTicketButton
             // 
@@ -260,12 +262,22 @@
             this.SubmitOrderChangesButton.Text = "Submit\r\n";
             this.SubmitOrderChangesButton.UseVisualStyleBackColor = false;
             // 
+            // SubmittedOrderLabel
+            // 
+            this.SubmittedOrderLabel.AutoSize = true;
+            this.SubmittedOrderLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SubmittedOrderLabel.Location = new System.Drawing.Point(518, 138);
+            this.SubmittedOrderLabel.Name = "SubmittedOrderLabel";
+            this.SubmittedOrderLabel.Size = new System.Drawing.Size(0, 37);
+            this.SubmittedOrderLabel.TabIndex = 49;
+            // 
             // OrderView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1420, 805);
+            this.Controls.Add(this.SubmittedOrderLabel);
             this.Controls.Add(this.SubmitOrderChangesButton);
             this.Controls.Add(this.AddItemButton);
             this.Controls.Add(this.pictureBox2);
@@ -285,8 +297,9 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "OrderView";
-            this.Text = " ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -315,5 +328,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button AddItemButton;
         private System.Windows.Forms.Button SubmitOrderChangesButton;
+        private System.Windows.Forms.Label SubmittedOrderLabel;
     }
 }

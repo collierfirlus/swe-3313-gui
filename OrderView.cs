@@ -27,5 +27,10 @@ namespace swe_3313_gui
             ProgramControl.GetInstance().TableView.Show();
             ProgramControl.GetInstance().OrderView.Hide();
         }
+
+        private void CheckOutButton_Click(object sender, EventArgs e)
+        {
+            ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().CheckOut();
+        }
     }
 }

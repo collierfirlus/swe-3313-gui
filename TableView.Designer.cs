@@ -523,6 +523,7 @@ namespace swe_3313_gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1264, 772);
             this.Controls.Add(this.label1);
@@ -572,7 +573,9 @@ namespace swe_3313_gui
             this.Controls.Add(this.Button2A);
             this.Controls.Add(this.Button1A);
             this.Controls.Add(this.BarGreyBackground);
+            this.MaximizeBox = false;
             this.Name = "TableView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableView";
             ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).EndInit();
             this.ResumeLayout(false);
