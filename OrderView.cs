@@ -32,5 +32,12 @@ namespace swe_3313_gui
         {
             ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().CheckOut();
         }
+
+        private void AddItemButton_Click(object sender, EventArgs e)
+        {
+            ProgramControl.GetInstance().menuView.Show();
+            ProgramControl.GetInstance().OrderView.Hide();
+        }
+
     }
 }

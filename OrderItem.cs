@@ -8,15 +8,26 @@ namespace swe_3313_gui
     {
         private string itemName;
         private double cost;
-        private string itemDescription;
         private List<string> specialRequests;
+
+        public string ItemName
+        {
+            get
+            {
+                return itemName;
+            }
+        }
 
         public double Cost
         {
             get { return cost; }
             set { cost = value; }
         }
-
+        public OrderItem(string name, double cost)
+        {
+            itemName = name;
+            this.cost = cost;
+        }
         public void AddSpecialRequest(string specialRequest)
         {
             specialRequests.Add(specialRequest);

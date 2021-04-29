@@ -17,6 +17,11 @@ namespace swe_3313_gui
         public Login LoginView = new Login();
         public TableView TableView = new TableView();
         public OrderView OrderView = new OrderView();
+        public MenuView menuView = new MenuView();
+        public SoupsSaladsView soupsaladView = new SoupsSaladsView();
+        public EntreeView entreeView = new EntreeView();
+        public DessertView dessertView = new DessertView();
+        public BeverageView beverageView = new BeverageView();
 
         private static ProgramControl instance = null;
         //private static readonly object padlock = new object();

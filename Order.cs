@@ -14,12 +14,12 @@ namespace swe_3313_gui
         private double AmountDue;
 
         List<OrderItem> SubmittedTableOrder;
-        List<OrderItem> ChangeTableOrder;
+        public List<OrderItem> ChangeTableOrder;
 
         public Order()
         {
 
-            OrderTableId = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
+            //OrderTableId = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
             TimeSubmitted = DateTime.Now;
             Paid = false;
             TotalCost = 0;
@@ -27,10 +27,10 @@ namespace swe_3313_gui
             ChangeTableOrder = new List<OrderItem>(); 
         }
 
-        public void AddItem(OrderItem item) //Execute when menu item is selected in MenuView
+        public void AddItem(string name, double cost) //Execute when menu item is selected in MenuView
         {
-            ChangeTableOrder.Add(item);
-            TotalCost += item.Cost;
+            ChangeTableOrder.Add(new OrderItem(name, cost));
+            this.TotalCost += cost;
             //update screen to show added item
         }
 
@@ -58,6 +58,24 @@ namespace swe_3313_gui
             //Remove Item from order
         }
 
-        
+        public string PrintChangeOrder()
+        {
+            string returnThis = "";
+            foreach(OrderItem item in ChangeTableOrder)
+            {
+                returnThis += item.ItemName + "\n";
+            }
+            return returnThis;
+        }
+
+        public string PrintSubmittedOrder()
+        {
+            string returnThis = "";
+            foreach (OrderItem item in SubmittedTableOrder)
+            {
+                returnThis += item.ItemName + "\n";
+            }
+            return returnThis;
+        }
     }
 }

@@ -133,7 +133,6 @@ namespace swe_3313_gui
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BottomPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JsCornerImgBox)).EndInit();

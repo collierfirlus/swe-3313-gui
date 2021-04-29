@@ -18,6 +18,7 @@ namespace swe_3313_gui
             this.tableId = Id;
             this.capacity = TableCapacity;
             status = null;
+            tableOrder = new Order();
         }
 
         public string Status

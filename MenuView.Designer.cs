@@ -30,15 +30,21 @@ namespace swe_3313_gui
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.SoupSaladButton = new System.Windows.Forms.Button();
+            this.BeverageButton = new System.Windows.Forms.Button();
+            this.DessertButton = new System.Windows.Forms.Button();
+            this.MenuBackButton = new System.Windows.Forms.Button();
+            this.EntreeButton = new System.Windows.Forms.Button();
+            this.AppetizerButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.MozzSticksLbl = new System.Windows.Forms.Label();
+            this.AddFriedPickbtn = new System.Windows.Forms.Button();
+            this.EditFriedPickBtn = new System.Windows.Forms.Button();
+            this.AddMozzSticksBtn = new System.Windows.Forms.Button();
+            this.EditMozzSticksBtn = new System.Windows.Forms.Button();
+            this.MozzDescLbl = new System.Windows.Forms.Label();
+            this.FriedPickLbl = new System.Windows.Forms.Label();
+            this.FriedPickDescLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,74 +58,77 @@ namespace swe_3313_gui
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // SoupSaladButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(34, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Soups/Salads";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SoupSaladButton.BackColor = System.Drawing.Color.Maroon;
+            this.SoupSaladButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.SoupSaladButton.Location = new System.Drawing.Point(34, 305);
+            this.SoupSaladButton.Name = "SoupSaladButton";
+            this.SoupSaladButton.Size = new System.Drawing.Size(209, 42);
+            this.SoupSaladButton.TabIndex = 1;
+            this.SoupSaladButton.Text = "Soups/Salads";
+            this.SoupSaladButton.UseVisualStyleBackColor = false;
+            this.SoupSaladButton.Click += new System.EventHandler(this.SoupSaladButton_Click);
             // 
-            // button2
+            // BeverageButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(34, 476);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 42);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Beverages";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BeverageButton.BackColor = System.Drawing.Color.Maroon;
+            this.BeverageButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BeverageButton.Location = new System.Drawing.Point(34, 476);
+            this.BeverageButton.Name = "BeverageButton";
+            this.BeverageButton.Size = new System.Drawing.Size(209, 42);
+            this.BeverageButton.TabIndex = 2;
+            this.BeverageButton.Text = "Beverages";
+            this.BeverageButton.UseVisualStyleBackColor = false;
+            this.BeverageButton.Click += new System.EventHandler(this.BeverageButton_Click);
             // 
-            // button3
+            // DessertButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Maroon;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(34, 416);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(209, 42);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Desserts";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DessertButton.BackColor = System.Drawing.Color.Maroon;
+            this.DessertButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.DessertButton.Location = new System.Drawing.Point(34, 416);
+            this.DessertButton.Name = "DessertButton";
+            this.DessertButton.Size = new System.Drawing.Size(209, 42);
+            this.DessertButton.TabIndex = 3;
+            this.DessertButton.Text = "Desserts";
+            this.DessertButton.UseVisualStyleBackColor = false;
+            this.DessertButton.Click += new System.EventHandler(this.DessertButton_Click);
             // 
-            // button4
+            // MenuBackButton
             // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(34, 584);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(209, 42);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "< Back ";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.MenuBackButton.BackColor = System.Drawing.Color.Maroon;
+            this.MenuBackButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MenuBackButton.Location = new System.Drawing.Point(34, 584);
+            this.MenuBackButton.Name = "MenuBackButton";
+            this.MenuBackButton.Size = new System.Drawing.Size(209, 42);
+            this.MenuBackButton.TabIndex = 4;
+            this.MenuBackButton.Text = "< Back ";
+            this.MenuBackButton.UseVisualStyleBackColor = false;
+            this.MenuBackButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // EntreeButton
             // 
-            this.button5.BackColor = System.Drawing.Color.Maroon;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(34, 359);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(209, 42);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Entrees";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.EntreeButton.BackColor = System.Drawing.Color.Maroon;
+            this.EntreeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.EntreeButton.Location = new System.Drawing.Point(34, 359);
+            this.EntreeButton.Name = "EntreeButton";
+            this.EntreeButton.Size = new System.Drawing.Size(209, 42);
+            this.EntreeButton.TabIndex = 5;
+            this.EntreeButton.Text = "Entrees";
+            this.EntreeButton.UseVisualStyleBackColor = false;
+            this.EntreeButton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // AppetizerButton
             // 
-            this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(34, 247);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(209, 42);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Appetizers ";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.AppetizerButton.BackColor = System.Drawing.Color.Firebrick;
+            this.AppetizerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AppetizerButton.Location = new System.Drawing.Point(34, 247);
+            this.AppetizerButton.Name = "AppetizerButton";
+            this.AppetizerButton.Size = new System.Drawing.Size(209, 42);
+            this.AppetizerButton.TabIndex = 6;
+            this.AppetizerButton.Text = "Appetizers ";
+            this.AppetizerButton.UseVisualStyleBackColor = false;
+            this.AppetizerButton.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
@@ -129,39 +138,116 @@ namespace swe_3313_gui
             this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 7;
             // 
-            // label2
+            // MozzSticksLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(597, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Mozzeralla Sticks";
+            this.MozzSticksLbl.AutoSize = true;
+            this.MozzSticksLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.MozzSticksLbl.Location = new System.Drawing.Point(520, 19);
+            this.MozzSticksLbl.Name = "MozzSticksLbl";
+            this.MozzSticksLbl.Size = new System.Drawing.Size(218, 37);
+            this.MozzSticksLbl.TabIndex = 8;
+            this.MozzSticksLbl.Text = "Mozzeralla Sticks\r\n";
             // 
-            // label3
+            // AddFriedPickbtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(597, 332);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 15);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Tater Tot Fondue";
+            this.AddFriedPickbtn.BackColor = System.Drawing.Color.Maroon;
+            this.AddFriedPickbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AddFriedPickbtn.Location = new System.Drawing.Point(386, 564);
+            this.AddFriedPickbtn.Name = "AddFriedPickbtn";
+            this.AddFriedPickbtn.Size = new System.Drawing.Size(209, 42);
+            this.AddFriedPickbtn.TabIndex = 10;
+            this.AddFriedPickbtn.Text = "Add Item";
+            this.AddFriedPickbtn.UseVisualStyleBackColor = false;
+            this.AddFriedPickbtn.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // EditFriedPickBtn
+            // 
+            this.EditFriedPickBtn.BackColor = System.Drawing.Color.Maroon;
+            this.EditFriedPickBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.EditFriedPickBtn.Location = new System.Drawing.Point(680, 564);
+            this.EditFriedPickBtn.Name = "EditFriedPickBtn";
+            this.EditFriedPickBtn.Size = new System.Drawing.Size(209, 42);
+            this.EditFriedPickBtn.TabIndex = 11;
+            this.EditFriedPickBtn.Text = "Customize";
+            this.EditFriedPickBtn.UseVisualStyleBackColor = false;
+            // 
+            // AddMozzSticksBtn
+            // 
+            this.AddMozzSticksBtn.BackColor = System.Drawing.Color.Maroon;
+            this.AddMozzSticksBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AddMozzSticksBtn.Location = new System.Drawing.Point(386, 260);
+            this.AddMozzSticksBtn.Name = "AddMozzSticksBtn";
+            this.AddMozzSticksBtn.Size = new System.Drawing.Size(209, 42);
+            this.AddMozzSticksBtn.TabIndex = 12;
+            this.AddMozzSticksBtn.Text = "Add Item";
+            this.AddMozzSticksBtn.UseVisualStyleBackColor = false;
+            this.AddMozzSticksBtn.Click += new System.EventHandler(this.AddMozzSticksBtn_Click);
+            // 
+            // EditMozzSticksBtn
+            // 
+            this.EditMozzSticksBtn.BackColor = System.Drawing.Color.Maroon;
+            this.EditMozzSticksBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.EditMozzSticksBtn.Location = new System.Drawing.Point(680, 260);
+            this.EditMozzSticksBtn.Name = "EditMozzSticksBtn";
+            this.EditMozzSticksBtn.Size = new System.Drawing.Size(209, 42);
+            this.EditMozzSticksBtn.TabIndex = 13;
+            this.EditMozzSticksBtn.Text = "Customize";
+            this.EditMozzSticksBtn.UseVisualStyleBackColor = false;
+            // 
+            // MozzDescLbl
+            // 
+            this.MozzDescLbl.AutoSize = true;
+            this.MozzDescLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MozzDescLbl.Location = new System.Drawing.Point(332, 73);
+            this.MozzDescLbl.Name = "MozzDescLbl";
+            this.MozzDescLbl.Size = new System.Drawing.Size(667, 68);
+            this.MozzDescLbl.TabIndex = 14;
+            this.MozzDescLbl.Text = "sticks of mozzarella cheese that are coated in seasoned Italian breadcrumbs, then" +
+    " deep fried until golden brown.\r\nServed with a side of marinara sauce.\r\n\r\n$6.00\r" +
+    "\n";
+            // 
+            // FriedPickLbl
+            // 
+            this.FriedPickLbl.AutoSize = true;
+            this.FriedPickLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.FriedPickLbl.Location = new System.Drawing.Point(552, 338);
+            this.FriedPickLbl.Name = "FriedPickLbl";
+            this.FriedPickLbl.Size = new System.Drawing.Size(162, 37);
+            this.FriedPickLbl.TabIndex = 15;
+            this.FriedPickLbl.Text = "Fried Pickles\r\n";
+            // 
+            // FriedPickDescLbl
+            // 
+            this.FriedPickDescLbl.AutoSize = true;
+            this.FriedPickDescLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FriedPickDescLbl.Location = new System.Drawing.Point(332, 390);
+            this.FriedPickDescLbl.Name = "FriedPickDescLbl";
+            this.FriedPickDescLbl.Size = new System.Drawing.Size(612, 68);
+            this.FriedPickDescLbl.TabIndex = 16;
+            this.FriedPickDescLbl.Text = "Fried Pickles are tangy dill pickles dipped in a smooth flavorful batter and frie" +
+    "d till crispy golden brown.\r\nServed with choice of sauce.\r\n\r\n$6.00";
             // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 692);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.FriedPickDescLbl);
+            this.Controls.Add(this.FriedPickLbl);
+            this.Controls.Add(this.EditMozzSticksBtn);
+            this.Controls.Add(this.AddMozzSticksBtn);
+            this.Controls.Add(this.EditFriedPickBtn);
+            this.Controls.Add(this.AddFriedPickbtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AppetizerButton);
+            this.Controls.Add(this.EntreeButton);
+            this.Controls.Add(this.MenuBackButton);
+            this.Controls.Add(this.DessertButton);
+            this.Controls.Add(this.BeverageButton);
+            this.Controls.Add(this.SoupSaladButton);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MozzDescLbl);
+            this.Controls.Add(this.MozzSticksLbl);
             this.MaximizeBox = false;
             this.Name = "MenuView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -176,14 +262,20 @@ namespace swe_3313_gui
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button SoupSaladButton;
+        private System.Windows.Forms.Button BeverageButton;
+        private System.Windows.Forms.Button DessertButton;
+        private System.Windows.Forms.Button MenuBackButton;
+        private System.Windows.Forms.Button EntreeButton;
+        private System.Windows.Forms.Button AppetizerButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label MozzSticksLbl;
+        private System.Windows.Forms.Button AddFriedPickbtn;
+        private System.Windows.Forms.Button EditFriedPickBtn;
+        private System.Windows.Forms.Button AddMozzSticksBtn;
+        private System.Windows.Forms.Button EditMozzSticksBtn;
+        private System.Windows.Forms.Label MozzDescLbl;
+        private System.Windows.Forms.Label FriedPickLbl;
+        private System.Windows.Forms.Label FriedPickDescLbl;
     }
 }
