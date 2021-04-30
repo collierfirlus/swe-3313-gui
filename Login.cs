@@ -16,6 +16,13 @@ namespace swe_3313_gui
         {
             InitializeComponent();
         }
+        
+        protected override void OnVisibleChanged(EventArgs e)
+        {
+            ///when the screen becomes visible, then change the text
+            base.OnVisibleChanged(e);
+            //ProgramControl.GetInstance().Restaurant.LoadEmployees();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -24,28 +31,22 @@ namespace swe_3313_gui
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            string username_input = passwordBox.Text;
-            string password_input = usernameBox.Text;
+            string usernameInput = usernameBox.Text;
+            string passwordInput = passwordBox.Text;
 
             //login to be changed later by using an Employee object in the ProgramControl class
 
-            if (usernameBox.Text == "a")//"a" for ease of testing
+            if (ProgramControl.GetInstance().Restaurant.AuthenticateEmployee(usernameInput, passwordInput))
             {
-                if (passwordBox.Text == "a")
-                {
-                    ///login and proceed to next page, hide current page
-                    ProgramControl.GetInstance().TableView.Show();
-                    ProgramControl.GetInstance().LoginView.Hide();
-                }
-                else
-                {
-                    InvalidCredentialsText.Text = "Invalid password. Try again.";
-                }
+                ProgramControl.GetInstance().TableView.Show();
+                ProgramControl.GetInstance().LoginView.Hide();
             }
             else
             {
-                InvalidCredentialsText.Text = "Invalid username. Try again.";
+                InvalidCredentialsText.Text = "Invalid credentials. Try again.";
             }
+            
+            
         }
 
     }
