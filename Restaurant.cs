@@ -7,6 +7,7 @@ namespace swe_3313_gui
     class Restaurant
     {
         List<Table> Tables = new List<Table>();
+        private int orderNumber = 1;
 
         public Restaurant() { }
 
@@ -37,5 +38,12 @@ namespace swe_3313_gui
         {
             return this.Tables;
         }
+
+        public int IncrementOrderNumber()
+        {
+            orderNumber++;
+            return orderNumber - 1;
+        }
+
     }
 }

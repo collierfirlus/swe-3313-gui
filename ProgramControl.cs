@@ -54,7 +54,6 @@ namespace swe_3313_gui
             tables.Add(new Table("6F", 4));
             return tables;
         }
-
         
     }
 }
