@@ -24,7 +24,6 @@ namespace swe_3313_gui
         public BeverageView beverageView = new BeverageView();
 
         private static ProgramControl instance = null;
-        //private static readonly object padlock = new object();
 
         public static ProgramControl GetInstance()
         {

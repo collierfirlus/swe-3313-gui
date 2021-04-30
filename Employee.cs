@@ -7,7 +7,6 @@ namespace swe_3313_gui
     class Employee
     {
         private int employee_id;
-        //TODO: Create a boolean for manager class. isManager.
         public int Employee_id
         {
             get { return employee_id; }
@@ -17,7 +16,7 @@ namespace swe_3313_gui
 
         public EmployeeRole Role = EmployeeRole.Server;
         
-        public Employee() ///default constructor
+        public Employee()
         {
             employee_id = 0;
             Role = EmployeeRole.Server;

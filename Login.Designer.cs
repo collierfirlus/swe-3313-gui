@@ -46,7 +46,7 @@ namespace swe_3313_gui
             this.BottomPanel.BackColor = System.Drawing.Color.Maroon;
             this.BottomPanel.Location = new System.Drawing.Point(-11, 471);
             this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Size = new System.Drawing.Size(1282, 309);
+            this.BottomPanel.Size = new System.Drawing.Size(1282, 333);
             this.BottomPanel.TabIndex = 0;
             this.BottomPanel.TabStop = false;
             // 
@@ -59,12 +59,12 @@ namespace swe_3313_gui
             this.EnterUsrPassText.Size = new System.Drawing.Size(546, 54);
             this.EnterUsrPassText.TabIndex = 1;
             this.EnterUsrPassText.Text = "Enter User and Pass";
-            this.EnterUsrPassText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EnterUsrPassText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // usernameBox
             // 
             this.usernameBox.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.usernameBox.Location = new System.Drawing.Point(510, 176);
+            this.usernameBox.Location = new System.Drawing.Point(509, 241);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(261, 34);
             this.usernameBox.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace swe_3313_gui
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LoginButton.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.LoginButton.Location = new System.Drawing.Point(586, 307);
+            this.LoginButton.Location = new System.Drawing.Point(585, 372);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(111, 43);
             this.LoginButton.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace swe_3313_gui
             // passwordBox
             // 
             this.passwordBox.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.passwordBox.Location = new System.Drawing.Point(510, 242);
+            this.passwordBox.Location = new System.Drawing.Point(509, 307);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(261, 34);
@@ -108,7 +108,7 @@ namespace swe_3313_gui
             this.InvalidCredentialsText.AutoSize = true;
             this.InvalidCredentialsText.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.InvalidCredentialsText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.InvalidCredentialsText.Location = new System.Drawing.Point(496, 376);
+            this.InvalidCredentialsText.Location = new System.Drawing.Point(495, 441);
             this.InvalidCredentialsText.Name = "InvalidCredentialsText";
             this.InvalidCredentialsText.Size = new System.Drawing.Size(0, 25);
             this.InvalidCredentialsText.TabIndex = 6;

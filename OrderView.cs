@@ -54,7 +54,6 @@ namespace swe_3313_gui
             this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
             this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
             this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
-            // ProgramControl.GetInstance().Restaurant.AddToQueue(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().changeTableOrder);
             ProgramControl.GetInstance().Restaurant.ordersToFulfil.Enqueue(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder());
             ProgramControl.GetInstance().Restaurant.PrintOrdersToFulfil();
         }
@@ -64,5 +63,10 @@ namespace swe_3313_gui
 
         }
 
+        private void DeleteItemButton_Click(object sender, EventArgs e)
+        {
+            ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().ChangeTableOrder.RemoveAt(0);
+            this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+        }
     }
 }

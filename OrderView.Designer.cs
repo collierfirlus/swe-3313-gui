@@ -49,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.CartDisplay = new System.Windows.Forms.Label();
             this.SubmittedOrderLabel = new System.Windows.Forms.Label();
+            this.DeleteItemButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -235,7 +236,7 @@
             // 
             this.AddItemButton.BackColor = System.Drawing.Color.Maroon;
             this.AddItemButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddItemButton.Location = new System.Drawing.Point(973, 558);
+            this.AddItemButton.Location = new System.Drawing.Point(973, 525);
             this.AddItemButton.Name = "AddItemButton";
             this.AddItemButton.Size = new System.Drawing.Size(272, 47);
             this.AddItemButton.TabIndex = 47;
@@ -282,12 +283,25 @@
             this.SubmittedOrderLabel.TabIndex = 52;
             this.SubmittedOrderLabel.Click += new System.EventHandler(this.SubmittedOrderLabel_Click);
             // 
+            // DeleteItemButton
+            // 
+            this.DeleteItemButton.BackColor = System.Drawing.Color.Maroon;
+            this.DeleteItemButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.DeleteItemButton.Location = new System.Drawing.Point(973, 578);
+            this.DeleteItemButton.Name = "DeleteItemButton";
+            this.DeleteItemButton.Size = new System.Drawing.Size(272, 47);
+            this.DeleteItemButton.TabIndex = 53;
+            this.DeleteItemButton.Text = "Delete Item";
+            this.DeleteItemButton.UseVisualStyleBackColor = false;
+            this.DeleteItemButton.Click += new System.EventHandler(this.DeleteItemButton_Click);
+            // 
             // OrderView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1283, 708);
+            this.Controls.Add(this.DeleteItemButton);
             this.Controls.Add(this.SubmittedOrderLabel);
             this.Controls.Add(this.CartDisplay);
             this.Controls.Add(this.label10);
@@ -342,5 +356,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label CartDisplay;
         private System.Windows.Forms.Label SubmittedOrderLabel;
+        private System.Windows.Forms.Button DeleteItemButton;
     }
 }
