@@ -31,9 +31,7 @@ namespace swe_3313_gui
         {
             this.FriedPickDescLbl = new System.Windows.Forms.Label();
             this.FriedPickLbl = new System.Windows.Forms.Label();
-            this.EditSoupBtn = new System.Windows.Forms.Button();
             this.AddSoupBtn = new System.Windows.Forms.Button();
-            this.EditSaladBtn = new System.Windows.Forms.Button();
             this.AddSaladBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AppetizerButton = new System.Windows.Forms.Button();
@@ -70,22 +68,11 @@ namespace swe_3313_gui
             this.FriedPickLbl.TabIndex = 31;
             this.FriedPickLbl.Text = "Caesar Salad";
             // 
-            // EditSoupBtn
-            // 
-            this.EditSoupBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditSoupBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditSoupBtn.Location = new System.Drawing.Point(676, 262);
-            this.EditSoupBtn.Name = "EditSoupBtn";
-            this.EditSoupBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditSoupBtn.TabIndex = 29;
-            this.EditSoupBtn.Text = "Customize";
-            this.EditSoupBtn.UseVisualStyleBackColor = false;
-            // 
             // AddSoupBtn
             // 
             this.AddSoupBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddSoupBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddSoupBtn.Location = new System.Drawing.Point(382, 262);
+            this.AddSoupBtn.Location = new System.Drawing.Point(548, 232);
             this.AddSoupBtn.Name = "AddSoupBtn";
             this.AddSoupBtn.Size = new System.Drawing.Size(209, 42);
             this.AddSoupBtn.TabIndex = 28;
@@ -93,22 +80,11 @@ namespace swe_3313_gui
             this.AddSoupBtn.UseVisualStyleBackColor = false;
             this.AddSoupBtn.Click += new System.EventHandler(this.AddSoupBtn_Click);
             // 
-            // EditSaladBtn
-            // 
-            this.EditSaladBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditSaladBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditSaladBtn.Location = new System.Drawing.Point(676, 566);
-            this.EditSaladBtn.Name = "EditSaladBtn";
-            this.EditSaladBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditSaladBtn.TabIndex = 27;
-            this.EditSaladBtn.Text = "Customize";
-            this.EditSaladBtn.UseVisualStyleBackColor = false;
-            // 
             // AddSaladBtn
             // 
             this.AddSaladBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddSaladBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddSaladBtn.Location = new System.Drawing.Point(382, 566);
+            this.AddSaladBtn.Location = new System.Drawing.Point(548, 562);
             this.AddSaladBtn.Name = "AddSaladBtn";
             this.AddSaladBtn.Size = new System.Drawing.Size(209, 42);
             this.AddSaladBtn.TabIndex = 26;
@@ -234,9 +210,7 @@ namespace swe_3313_gui
             this.ClientSize = new System.Drawing.Size(1072, 692);
             this.Controls.Add(this.FriedPickDescLbl);
             this.Controls.Add(this.FriedPickLbl);
-            this.Controls.Add(this.EditSoupBtn);
             this.Controls.Add(this.AddSoupBtn);
-            this.Controls.Add(this.EditSaladBtn);
             this.Controls.Add(this.AddSaladBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AppetizerButton);
@@ -263,9 +237,7 @@ namespace swe_3313_gui
 
         private System.Windows.Forms.Label FriedPickDescLbl;
         private System.Windows.Forms.Label FriedPickLbl;
-        private System.Windows.Forms.Button EditSoupBtn;
         private System.Windows.Forms.Button AddSoupBtn;
-        private System.Windows.Forms.Button EditSaladBtn;
         private System.Windows.Forms.Button AddSaladBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AppetizerButton;

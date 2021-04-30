@@ -291,6 +291,7 @@
             this.SubmittedOrderLabel.Name = "SubmittedOrderLabel";
             this.SubmittedOrderLabel.Size = new System.Drawing.Size(0, 32);
             this.SubmittedOrderLabel.TabIndex = 52;
+            this.SubmittedOrderLabel.Click += new System.EventHandler(this.SubmittedOrderLabel_Click);
             // 
             // OrderView
             // 

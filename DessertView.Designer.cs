@@ -31,9 +31,7 @@ namespace swe_3313_gui
         {
             this.FriedPickDescLbl = new System.Windows.Forms.Label();
             this.FriedPickLbl = new System.Windows.Forms.Label();
-            this.EditCheesecakeBtn = new System.Windows.Forms.Button();
             this.AddCheesecakeBtn = new System.Windows.Forms.Button();
-            this.EditChocCakeBtn = new System.Windows.Forms.Button();
             this.AddChocCakeBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AppetizerButton = new System.Windows.Forms.Button();
@@ -68,22 +66,11 @@ namespace swe_3313_gui
             this.FriedPickLbl.TabIndex = 63;
             this.FriedPickLbl.Text = "Slice of Chocolate Cake";
             // 
-            // EditCheesecakeBtn
-            // 
-            this.EditCheesecakeBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditCheesecakeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditCheesecakeBtn.Location = new System.Drawing.Point(678, 264);
-            this.EditCheesecakeBtn.Name = "EditCheesecakeBtn";
-            this.EditCheesecakeBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditCheesecakeBtn.TabIndex = 61;
-            this.EditCheesecakeBtn.Text = "Customize";
-            this.EditCheesecakeBtn.UseVisualStyleBackColor = false;
-            // 
             // AddCheesecakeBtn
             // 
             this.AddCheesecakeBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddCheesecakeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddCheesecakeBtn.Location = new System.Drawing.Point(384, 264);
+            this.AddCheesecakeBtn.Location = new System.Drawing.Point(531, 251);
             this.AddCheesecakeBtn.Name = "AddCheesecakeBtn";
             this.AddCheesecakeBtn.Size = new System.Drawing.Size(209, 42);
             this.AddCheesecakeBtn.TabIndex = 60;
@@ -91,22 +78,11 @@ namespace swe_3313_gui
             this.AddCheesecakeBtn.UseVisualStyleBackColor = false;
             this.AddCheesecakeBtn.Click += new System.EventHandler(this.AddCheesecakeBtn_Click);
             // 
-            // EditChocCakeBtn
-            // 
-            this.EditChocCakeBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditChocCakeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditChocCakeBtn.Location = new System.Drawing.Point(678, 568);
-            this.EditChocCakeBtn.Name = "EditChocCakeBtn";
-            this.EditChocCakeBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditChocCakeBtn.TabIndex = 59;
-            this.EditChocCakeBtn.Text = "Customize";
-            this.EditChocCakeBtn.UseVisualStyleBackColor = false;
-            // 
             // AddChocCakeBtn
             // 
             this.AddChocCakeBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddChocCakeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddChocCakeBtn.Location = new System.Drawing.Point(384, 568);
+            this.AddChocCakeBtn.Location = new System.Drawing.Point(531, 544);
             this.AddChocCakeBtn.Name = "AddChocCakeBtn";
             this.AddChocCakeBtn.Size = new System.Drawing.Size(209, 42);
             this.AddChocCakeBtn.TabIndex = 58;
@@ -231,9 +207,7 @@ namespace swe_3313_gui
             this.ClientSize = new System.Drawing.Size(1072, 692);
             this.Controls.Add(this.FriedPickDescLbl);
             this.Controls.Add(this.FriedPickLbl);
-            this.Controls.Add(this.EditCheesecakeBtn);
             this.Controls.Add(this.AddCheesecakeBtn);
-            this.Controls.Add(this.EditChocCakeBtn);
             this.Controls.Add(this.AddChocCakeBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AppetizerButton);
@@ -259,9 +233,7 @@ namespace swe_3313_gui
 
         private System.Windows.Forms.Label FriedPickDescLbl;
         private System.Windows.Forms.Label FriedPickLbl;
-        private System.Windows.Forms.Button EditCheesecakeBtn;
         private System.Windows.Forms.Button AddCheesecakeBtn;
-        private System.Windows.Forms.Button EditChocCakeBtn;
         private System.Windows.Forms.Button AddChocCakeBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AppetizerButton;

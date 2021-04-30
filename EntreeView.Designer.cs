@@ -31,9 +31,7 @@ namespace swe_3313_gui
         {
             this.FriedPickDescLbl = new System.Windows.Forms.Label();
             this.FriedPickLbl = new System.Windows.Forms.Label();
-            this.EditSpaghettiBtn = new System.Windows.Forms.Button();
             this.AddSpaghettiBtn = new System.Windows.Forms.Button();
-            this.EditBurgerBtn = new System.Windows.Forms.Button();
             this.AddBurgerBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AppetizerButton = new System.Windows.Forms.Button();
@@ -68,22 +66,11 @@ namespace swe_3313_gui
             this.FriedPickLbl.TabIndex = 47;
             this.FriedPickLbl.Text = "Bacon Cheeseburger";
             // 
-            // EditSpaghettiBtn
-            // 
-            this.EditSpaghettiBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditSpaghettiBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditSpaghettiBtn.Location = new System.Drawing.Point(675, 262);
-            this.EditSpaghettiBtn.Name = "EditSpaghettiBtn";
-            this.EditSpaghettiBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditSpaghettiBtn.TabIndex = 45;
-            this.EditSpaghettiBtn.Text = "Customize";
-            this.EditSpaghettiBtn.UseVisualStyleBackColor = false;
-            // 
             // AddSpaghettiBtn
             // 
             this.AddSpaghettiBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddSpaghettiBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddSpaghettiBtn.Location = new System.Drawing.Point(381, 262);
+            this.AddSpaghettiBtn.Location = new System.Drawing.Point(565, 233);
             this.AddSpaghettiBtn.Name = "AddSpaghettiBtn";
             this.AddSpaghettiBtn.Size = new System.Drawing.Size(209, 42);
             this.AddSpaghettiBtn.TabIndex = 44;
@@ -91,22 +78,11 @@ namespace swe_3313_gui
             this.AddSpaghettiBtn.UseVisualStyleBackColor = false;
             this.AddSpaghettiBtn.Click += new System.EventHandler(this.AddSpaghettiBtn_Click);
             // 
-            // EditBurgerBtn
-            // 
-            this.EditBurgerBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditBurgerBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditBurgerBtn.Location = new System.Drawing.Point(675, 566);
-            this.EditBurgerBtn.Name = "EditBurgerBtn";
-            this.EditBurgerBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditBurgerBtn.TabIndex = 43;
-            this.EditBurgerBtn.Text = "Customize";
-            this.EditBurgerBtn.UseVisualStyleBackColor = false;
-            // 
             // AddBurgerBtn
             // 
             this.AddBurgerBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddBurgerBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddBurgerBtn.Location = new System.Drawing.Point(381, 566);
+            this.AddBurgerBtn.Location = new System.Drawing.Point(565, 556);
             this.AddBurgerBtn.Name = "AddBurgerBtn";
             this.AddBurgerBtn.Size = new System.Drawing.Size(209, 42);
             this.AddBurgerBtn.TabIndex = 42;
@@ -231,9 +207,7 @@ namespace swe_3313_gui
             this.ClientSize = new System.Drawing.Size(1072, 692);
             this.Controls.Add(this.FriedPickDescLbl);
             this.Controls.Add(this.FriedPickLbl);
-            this.Controls.Add(this.EditSpaghettiBtn);
             this.Controls.Add(this.AddSpaghettiBtn);
-            this.Controls.Add(this.EditBurgerBtn);
             this.Controls.Add(this.AddBurgerBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AppetizerButton);
@@ -259,9 +233,7 @@ namespace swe_3313_gui
 
         private System.Windows.Forms.Label FriedPickDescLbl;
         private System.Windows.Forms.Label FriedPickLbl;
-        private System.Windows.Forms.Button EditSpaghettiBtn;
         private System.Windows.Forms.Button AddSpaghettiBtn;
-        private System.Windows.Forms.Button EditBurgerBtn;
         private System.Windows.Forms.Button AddBurgerBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AppetizerButton;

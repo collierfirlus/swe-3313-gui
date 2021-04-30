@@ -21,7 +21,9 @@ namespace swe_3313_gui
             base.OnVisibleChanged(e);
             this.TableNumLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
             this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
-            
+            this.SubmittedOrderLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintSubmittedOrder();
+            this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
+            this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -33,6 +35,10 @@ namespace swe_3313_gui
         private void CheckOutButton_Click(object sender, EventArgs e)
         {
             ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().CheckOut();
+            this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            this.SubmittedOrderLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintSubmittedOrder();
+            this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
+            this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
         }
 
         private void AddItemButton_Click(object sender, EventArgs e)
@@ -49,5 +55,11 @@ namespace swe_3313_gui
             this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
             this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
         }
+
+        private void SubmittedOrderLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

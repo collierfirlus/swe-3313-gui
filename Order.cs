@@ -6,7 +6,7 @@ namespace swe_3313_gui
 {
     class Order
     {
-        private int OrderNumber { get; set; }
+        private static int OrderNumber { get; set; }
         private bool Paid { get; set; }
         private string OrderTableId { get; set; }
         private double totalCost; 

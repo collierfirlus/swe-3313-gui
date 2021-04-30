@@ -39,9 +39,7 @@ namespace swe_3313_gui
             this.label1 = new System.Windows.Forms.Label();
             this.MozzSticksLbl = new System.Windows.Forms.Label();
             this.AddFriedPickbtn = new System.Windows.Forms.Button();
-            this.EditFriedPickBtn = new System.Windows.Forms.Button();
             this.AddMozzSticksBtn = new System.Windows.Forms.Button();
-            this.EditMozzSticksBtn = new System.Windows.Forms.Button();
             this.MozzDescLbl = new System.Windows.Forms.Label();
             this.FriedPickLbl = new System.Windows.Forms.Label();
             this.FriedPickDescLbl = new System.Windows.Forms.Label();
@@ -152,7 +150,7 @@ namespace swe_3313_gui
             // 
             this.AddFriedPickbtn.BackColor = System.Drawing.Color.Maroon;
             this.AddFriedPickbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddFriedPickbtn.Location = new System.Drawing.Point(386, 564);
+            this.AddFriedPickbtn.Location = new System.Drawing.Point(529, 554);
             this.AddFriedPickbtn.Name = "AddFriedPickbtn";
             this.AddFriedPickbtn.Size = new System.Drawing.Size(209, 42);
             this.AddFriedPickbtn.TabIndex = 10;
@@ -160,39 +158,17 @@ namespace swe_3313_gui
             this.AddFriedPickbtn.UseVisualStyleBackColor = false;
             this.AddFriedPickbtn.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // EditFriedPickBtn
-            // 
-            this.EditFriedPickBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditFriedPickBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditFriedPickBtn.Location = new System.Drawing.Point(680, 564);
-            this.EditFriedPickBtn.Name = "EditFriedPickBtn";
-            this.EditFriedPickBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditFriedPickBtn.TabIndex = 11;
-            this.EditFriedPickBtn.Text = "Customize";
-            this.EditFriedPickBtn.UseVisualStyleBackColor = false;
-            // 
             // AddMozzSticksBtn
             // 
             this.AddMozzSticksBtn.BackColor = System.Drawing.Color.Maroon;
             this.AddMozzSticksBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddMozzSticksBtn.Location = new System.Drawing.Point(386, 260);
+            this.AddMozzSticksBtn.Location = new System.Drawing.Point(529, 237);
             this.AddMozzSticksBtn.Name = "AddMozzSticksBtn";
             this.AddMozzSticksBtn.Size = new System.Drawing.Size(209, 42);
             this.AddMozzSticksBtn.TabIndex = 12;
             this.AddMozzSticksBtn.Text = "Add Item";
             this.AddMozzSticksBtn.UseVisualStyleBackColor = false;
             this.AddMozzSticksBtn.Click += new System.EventHandler(this.AddMozzSticksBtn_Click);
-            // 
-            // EditMozzSticksBtn
-            // 
-            this.EditMozzSticksBtn.BackColor = System.Drawing.Color.Maroon;
-            this.EditMozzSticksBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EditMozzSticksBtn.Location = new System.Drawing.Point(680, 260);
-            this.EditMozzSticksBtn.Name = "EditMozzSticksBtn";
-            this.EditMozzSticksBtn.Size = new System.Drawing.Size(209, 42);
-            this.EditMozzSticksBtn.TabIndex = 13;
-            this.EditMozzSticksBtn.Text = "Customize";
-            this.EditMozzSticksBtn.UseVisualStyleBackColor = false;
             // 
             // MozzDescLbl
             // 
@@ -234,9 +210,7 @@ namespace swe_3313_gui
             this.ClientSize = new System.Drawing.Size(1072, 692);
             this.Controls.Add(this.FriedPickDescLbl);
             this.Controls.Add(this.FriedPickLbl);
-            this.Controls.Add(this.EditMozzSticksBtn);
             this.Controls.Add(this.AddMozzSticksBtn);
-            this.Controls.Add(this.EditFriedPickBtn);
             this.Controls.Add(this.AddFriedPickbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AppetizerButton);
@@ -271,9 +245,7 @@ namespace swe_3313_gui
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label MozzSticksLbl;
         private System.Windows.Forms.Button AddFriedPickbtn;
-        private System.Windows.Forms.Button EditFriedPickBtn;
         private System.Windows.Forms.Button AddMozzSticksBtn;
-        private System.Windows.Forms.Button EditMozzSticksBtn;
         private System.Windows.Forms.Label MozzDescLbl;
         private System.Windows.Forms.Label FriedPickLbl;
         private System.Windows.Forms.Label FriedPickDescLbl;
