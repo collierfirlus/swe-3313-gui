@@ -54,7 +54,6 @@ namespace swe_3313_gui
             this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
             this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
             this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
-            this.OrderNumberLabel.Text = Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().OrderNumber);
         }
 
         private void SubmittedOrderLabel_Click(object sender, EventArgs e)

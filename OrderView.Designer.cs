@@ -40,7 +40,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.OrderNumberLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -185,21 +184,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(478, 18);
+            this.label6.Location = new System.Drawing.Point(518, 18);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 37);
+            this.label6.Size = new System.Drawing.Size(92, 37);
             this.label6.TabIndex = 39;
-            this.label6.Text = "Order #";
-            // 
-            // OrderNumberLabel
-            // 
-            this.OrderNumberLabel.AutoSize = true;
-            this.OrderNumberLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OrderNumberLabel.Location = new System.Drawing.Point(581, 18);
-            this.OrderNumberLabel.Name = "OrderNumberLabel";
-            this.OrderNumberLabel.Size = new System.Drawing.Size(77, 37);
-            this.OrderNumberLabel.TabIndex = 40;
-            this.OrderNumberLabel.Text = "0000";
+            this.label6.Text = "Order ";
             // 
             // label8
             // 
@@ -308,7 +297,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.OrderNumberLabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -345,7 +333,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label OrderNumberLabel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;

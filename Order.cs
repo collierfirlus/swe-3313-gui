@@ -6,7 +6,6 @@ namespace swe_3313_gui
 {
     class Order
     {
-        private int orderNumber;
         private bool Paid { get; set; }
         private string OrderTableId { get; set; }
         private double totalCost; 
@@ -17,18 +16,11 @@ namespace swe_3313_gui
             set { value = totalCost; }
         }
 
-        public int OrderNumber
-        {
-            get { return orderNumber; }
-            set { orderNumber = value; }
-        }
-
         List<OrderItem> SubmittedTableOrder;
         public List<OrderItem> ChangeTableOrder;
 
         public Order()
         {
-            orderNumber = 0;
             Paid = false;
             totalCost = 0;
             SubmittedTableOrder = new List<OrderItem>();
@@ -51,10 +43,6 @@ namespace swe_3313_gui
             }
             ChangeTableOrder.Clear();
 
-            if(orderNumber == 0)
-            {
-                orderNumber = ProgramControl.GetInstance().Restaurant.IncrementOrderNumber();
-            }
         }
 
         public void CheckOut() //execute when Checkout button is pressed in OrderView
@@ -64,7 +52,6 @@ namespace swe_3313_gui
             SubmittedTableOrder.Clear();
             ChangeTableOrder.Clear();
             totalCost = 0;
-            orderNumber = 0;
         }
 
         public void RemoveItem(OrderItem item)
