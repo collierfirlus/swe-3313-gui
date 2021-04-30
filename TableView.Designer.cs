@@ -1,4 +1,6 @@
 ﻿
+using System.Drawing;
+
 namespace swe_3313_gui
 {
     using System;
@@ -256,6 +258,7 @@ namespace swe_3313_gui
             this.Button6F.TabIndex = 28;
             this.Button6F.Text = "6F";
             this.Button6F.UseVisualStyleBackColor = true;
+            //this.Button6F.BackColor = Color.Chartreuse;
             this.Button6F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button5F
@@ -266,6 +269,7 @@ namespace swe_3313_gui
             this.Button5F.TabIndex = 27;
             this.Button5F.Text = "5F";
             this.Button5F.UseVisualStyleBackColor = true;
+            //this.Button5F.BackColor = Color.Chartreuse;
             this.Button5F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button4F
@@ -276,6 +280,7 @@ namespace swe_3313_gui
             this.Button4F.TabIndex = 26;
             this.Button4F.Text = "4F";
             this.Button4F.UseVisualStyleBackColor = true;
+            //this.Button4F.BackColor = Color.Chartreuse;
             this.Button4F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button3F
@@ -286,6 +291,7 @@ namespace swe_3313_gui
             this.Button3F.TabIndex = 25;
             this.Button3F.Text = "3F";
             this.Button3F.UseVisualStyleBackColor = true;
+            //this.Button3F.BackColor = Color.Chartreuse;
             this.Button3F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button2F
@@ -296,6 +302,7 @@ namespace swe_3313_gui
             this.Button2F.TabIndex = 24;
             this.Button2F.Text = "2F";
             this.Button2F.UseVisualStyleBackColor = true;
+            //this.Button2F.BackColor = Color.Chartreuse;
             this.Button2F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button1F
@@ -306,6 +313,7 @@ namespace swe_3313_gui
             this.Button1F.TabIndex = 23;
             this.Button1F.Text = "1F";
             this.Button1F.UseVisualStyleBackColor = true;
+            //this.Button1F.BackColor = Color.Chartreuse;
             this.Button1F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button6E
@@ -588,9 +596,18 @@ namespace swe_3313_gui
             //Set the table instance to the ProgramControl.
             ProgramControl.GetInstance().TableCurrentlySelected = 
                 ProgramControl.GetInstance().Restaurant.GetTableById(tableId);
+            if (ProgramControl.GetInstance().TableCurrentlySelected.Status == TableStatus.Dirty)
+            {
+                ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Open;
+                ProgramControl.GetInstance().TableView.Hide();
+                ProgramControl.GetInstance().TableView.Show();
+            }
+            else
+            {
+                ProgramControl.GetInstance().TableView.Hide();
+                ProgramControl.GetInstance().OrderView.Show();
+            }
 
-            ProgramControl.GetInstance().TableView.Hide();
-            ProgramControl.GetInstance().OrderView.Show();
         }
 
         #endregion

@@ -5,8 +5,7 @@ namespace swe_3313_gui
 {
     class Order
     {
-        private bool Paid { get; set; }
-        private string OrderTableId { get; set; }
+        private bool paid { get; set; }
         private double totalCost; 
 
         public double TotalCost
@@ -18,15 +17,9 @@ namespace swe_3313_gui
         List<OrderItem> SubmittedTableOrder;
         public List<OrderItem> ChangeTableOrder;
 
-        public List<OrderItem> changeTableOrder
-        {
-            get { return ChangeTableOrder; }
-            set { value = ChangeTableOrder; }
-        }
-
         public Order()
         {
-            Paid = false;
+            paid = false;
             totalCost = 0;
             SubmittedTableOrder = new List<OrderItem>();
             ChangeTableOrder = new List<OrderItem>(); 
@@ -39,7 +32,7 @@ namespace swe_3313_gui
             //update screen to show added item
         }
 
-        public void SubmitOrder() //Execute when Submit buttom is pressed in OrderView
+        public void SubmitOrder() //Execute when Submit button is pressed in OrderView
         {
             //this would also send order to cooks screen
             foreach(OrderItem item in ChangeTableOrder)
@@ -47,13 +40,13 @@ namespace swe_3313_gui
                 SubmittedTableOrder.Add(item);
             }
             ChangeTableOrder.Clear();
-
+            ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Occupied;
         }
 
         public void CheckOut() //execute when Checkout button is pressed in OrderView
         {
-            Paid = true;
-            ProgramControl.GetInstance().TableCurrentlySelected.Status = "Dirty";
+            paid = true;
+            ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Dirty;
             SubmittedTableOrder.Clear();
             ChangeTableOrder.Clear();
             totalCost = 0;

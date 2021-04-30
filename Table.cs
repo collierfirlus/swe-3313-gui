@@ -8,7 +8,7 @@ namespace swe_3313_gui
     {
         private string tableId;
         private int capacity;
-        private string status;
+        private TableStatus status;
         private Order tableOrder;
 
         public Table() { }
@@ -17,11 +17,11 @@ namespace swe_3313_gui
         {
             this.tableId = Id;
             this.capacity = TableCapacity;
-            status = null;
+            status = TableStatus.Open;
             tableOrder = new Order();
         }
 
-        public string Status
+        public TableStatus Status
         {
             set { status = value; }
             get { return status; }

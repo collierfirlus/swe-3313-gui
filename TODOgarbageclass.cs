@@ -23,7 +23,7 @@ namespace swe_3313_gui
         ///
         ///-add the rest of the tables to the list in ProgramControl
         ///
-        ///-Fonts, text size & color, and all colors need to be updated to match those in figma
+        ///-Fonts, text size & color, and all colors need to be updated to match those in amfig
 
         //---------------------------examples
         //Get tables from ProgramControl

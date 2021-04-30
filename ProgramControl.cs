@@ -11,7 +11,7 @@ namespace swe_3313_gui
 
         public Table TableCurrentlySelected = new Table("_init_table", 0);
         public Restaurant Restaurant = new Restaurant();
-        public Employee Employee;
+        public Employee EmployeeSignedIn;
 
         //Screens
         public Login LoginView = new Login();
@@ -54,6 +54,5 @@ namespace swe_3313_gui
             tables.Add(new Table("6F", 4));
             return tables;
         }
-        
     }
 }

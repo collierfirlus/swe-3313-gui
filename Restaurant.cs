@@ -7,20 +7,24 @@ namespace swe_3313_gui
 {
     class Restaurant
     {
-        List<Table> Tables = new List<Table>();
-        Queue<OrderItem> OrderUp = new Queue<OrderItem>();
+        List<Table> tables = new List<Table>();
+        public Queue<Order> ordersToFulfil = new Queue<Order>();
+        public List<Employee> Employees;
+        
+        // public void LoadEmployees()
+        // {
+        //     Employees = GetSeedEmployees();
+        // }
 
-        public Restaurant() { }
-
-        public void AddTable(string ID, int tableCapacity)
+        public Restaurant()
         {
-            Tables.Add(new Table(ID, tableCapacity));
+            Employees = GetSeedEmployees();
         }
 
         public Table GetTableById(string TargetID)
         {
             Table FoundTable = null;
-            foreach(Table table in Tables)
+            foreach(Table table in tables)
             {
                 if(table.TableId == TargetID)
                 {
@@ -32,23 +36,50 @@ namespace swe_3313_gui
 
         public void SetTables(List<Table> tables)
         {
-            this.Tables = tables; 
+            this.tables = tables; 
         }
 
-        public List<Table> GetTables()
+        public void PrintOrdersToFulfil()
         {
-            return this.Tables;
-        }
-
-        public void AddToQueue(List<OrderItem> orders)
-        {
-            foreach(OrderItem item in orders)
+            int i = 1;
+            foreach (var order in this.ordersToFulfil)
             {
-                OrderUp.Enqueue(item);
-                Debug.WriteLine(item.ItemName + "\n");
-                Console.WriteLine("test");
+                Console.WriteLine("Priority: " + i);
+                Console.WriteLine("Items: ");
+                order.PrintSubmittedOrder();
+                i++;
             }
         }
 
+        public bool AuthenticateEmployee(string username, string password)
+        {
+            foreach (var employee in Employees)
+            {
+                if (employee.username == username)
+                {
+                    ProgramControl.GetInstance().LoginView.Hide();
+                    if (employee.password == password)
+                    {
+                        ProgramControl.GetInstance().EmployeeSignedIn = employee;
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        
+        private static List<Employee> GetSeedEmployees()
+        {
+            List<Employee> employees = new List<Employee>();
+            Employee server = new Employee(EmployeeRole.Server, "Jane", "Tabon");
+            server.username = "server";
+            server.password = "server";
+            employees.Add(server);
+            Employee manager = new Employee(EmployeeRole.Server, "Richard", "Gesick");
+            manager.username = "manager";
+            manager.password = "manager";
+            employees.Add(manager);
+            return employees;
+        }
     }
 }
