@@ -75,7 +75,7 @@ namespace swe_3313_gui
             server.username = "server";
             server.password = "server";
             employees.Add(server);
-            Employee manager = new Employee(EmployeeRole.Server, "Richard", "Gesick");
+            Employee manager = new Employee(EmployeeRole.Manager, "Richard", "Gesick");
             manager.username = "manager";
             manager.password = "manager";
             employees.Add(manager);

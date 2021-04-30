@@ -81,7 +81,7 @@ namespace swe_3313_gui
             this.BarLabelText3 = new System.Windows.Forms.Label();
             this.BarLabelText4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.BarGreyBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // BarGreyBackground
@@ -102,7 +102,6 @@ namespace swe_3313_gui
             this.Button1A.TabIndex = 1;
             this.Button1A.Text = "1A";
             this.Button1A.UseVisualStyleBackColor = true;
-            this.Button1A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button2A
             // 
@@ -112,7 +111,6 @@ namespace swe_3313_gui
             this.Button2A.TabIndex = 2;
             this.Button2A.Text = "2A";
             this.Button2A.UseVisualStyleBackColor = true;
-            this.Button2A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button3A
             // 
@@ -122,7 +120,6 @@ namespace swe_3313_gui
             this.Button3A.TabIndex = 3;
             this.Button3A.Text = "3A";
             this.Button3A.UseVisualStyleBackColor = true;
-            this.Button3A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button4A
             // 
@@ -132,7 +129,6 @@ namespace swe_3313_gui
             this.Button4A.TabIndex = 4;
             this.Button4A.Text = "4A";
             this.Button4A.UseVisualStyleBackColor = true;
-            this.Button4A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button5A
             // 
@@ -142,7 +138,6 @@ namespace swe_3313_gui
             this.Button5A.TabIndex = 5;
             this.Button5A.Text = "5A";
             this.Button5A.UseVisualStyleBackColor = true;
-            this.Button5A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button6A
             // 
@@ -152,7 +147,6 @@ namespace swe_3313_gui
             this.Button6A.TabIndex = 6;
             this.Button6A.Text = "6A";
             this.Button6A.UseVisualStyleBackColor = true;
-            this.Button6A.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button6B
             // 
@@ -162,7 +156,6 @@ namespace swe_3313_gui
             this.Button6B.TabIndex = 12;
             this.Button6B.Text = "6B";
             this.Button6B.UseVisualStyleBackColor = true;
-            this.Button6B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button5B
             // 
@@ -172,7 +165,6 @@ namespace swe_3313_gui
             this.Button5B.TabIndex = 11;
             this.Button5B.Text = "5B";
             this.Button5B.UseVisualStyleBackColor = true;
-            this.Button5B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button4B
             // 
@@ -182,7 +174,6 @@ namespace swe_3313_gui
             this.Button4B.TabIndex = 10;
             this.Button4B.Text = "4B";
             this.Button4B.UseVisualStyleBackColor = true;
-            this.Button4B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button3B
             // 
@@ -192,7 +183,6 @@ namespace swe_3313_gui
             this.Button3B.TabIndex = 9;
             this.Button3B.Text = "3B";
             this.Button3B.UseVisualStyleBackColor = true;
-            this.Button3B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button2B
             // 
@@ -202,7 +192,6 @@ namespace swe_3313_gui
             this.Button2B.TabIndex = 8;
             this.Button2B.Text = "2B";
             this.Button2B.UseVisualStyleBackColor = true;
-            this.Button2B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button1B
             // 
@@ -212,7 +201,6 @@ namespace swe_3313_gui
             this.Button1B.TabIndex = 7;
             this.Button1B.Text = "1B";
             this.Button1B.UseVisualStyleBackColor = true;
-            this.Button1B.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button5C
             // 
@@ -258,8 +246,6 @@ namespace swe_3313_gui
             this.Button6F.TabIndex = 28;
             this.Button6F.Text = "6F";
             this.Button6F.UseVisualStyleBackColor = true;
-            //this.Button6F.BackColor = Color.Chartreuse;
-            this.Button6F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button5F
             // 
@@ -269,8 +255,6 @@ namespace swe_3313_gui
             this.Button5F.TabIndex = 27;
             this.Button5F.Text = "5F";
             this.Button5F.UseVisualStyleBackColor = true;
-            //this.Button5F.BackColor = Color.Chartreuse;
-            this.Button5F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button4F
             // 
@@ -280,8 +264,6 @@ namespace swe_3313_gui
             this.Button4F.TabIndex = 26;
             this.Button4F.Text = "4F";
             this.Button4F.UseVisualStyleBackColor = true;
-            //this.Button4F.BackColor = Color.Chartreuse;
-            this.Button4F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button3F
             // 
@@ -291,8 +273,6 @@ namespace swe_3313_gui
             this.Button3F.TabIndex = 25;
             this.Button3F.Text = "3F";
             this.Button3F.UseVisualStyleBackColor = true;
-            //this.Button3F.BackColor = Color.Chartreuse;
-            this.Button3F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button2F
             // 
@@ -302,8 +282,6 @@ namespace swe_3313_gui
             this.Button2F.TabIndex = 24;
             this.Button2F.Text = "2F";
             this.Button2F.UseVisualStyleBackColor = true;
-            //this.Button2F.BackColor = Color.Chartreuse;
-            this.Button2F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button1F
             // 
@@ -313,8 +291,6 @@ namespace swe_3313_gui
             this.Button1F.TabIndex = 23;
             this.Button1F.Text = "1F";
             this.Button1F.UseVisualStyleBackColor = true;
-            //this.Button1F.BackColor = Color.Chartreuse;
-            this.Button1F.Click += new System.EventHandler(this.tableButtonClicked);
             // 
             // Button6E
             // 
@@ -379,7 +355,6 @@ namespace swe_3313_gui
             this.BackButton.TabIndex = 29;
             this.BackButton.Text = "< Back";
             this.BackButton.UseVisualStyleBackColor = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // ButtonBar1
             // 
@@ -585,28 +560,9 @@ namespace swe_3313_gui
             this.Name = "TableView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableView";
-            ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.BarGreyBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-        private void tableButtonClicked(object sender, System.EventArgs e) ///button event handler
-        {
-            string tableId = (sender as System.Windows.Forms.Button).Text;
-            //Set the table instance to the ProgramControl.
-            ProgramControl.GetInstance().TableCurrentlySelected = 
-                ProgramControl.GetInstance().Restaurant.GetTableById(tableId);
-            if (ProgramControl.GetInstance().TableCurrentlySelected.Status == TableStatus.Dirty)
-            {
-                ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Open;
-                ProgramControl.GetInstance().TableView.Hide();
-                ProgramControl.GetInstance().TableView.Show();
-            }
-            else
-            {
-                ProgramControl.GetInstance().TableView.Hide();
-                ProgramControl.GetInstance().OrderView.Show();
-            }
 
         }
 

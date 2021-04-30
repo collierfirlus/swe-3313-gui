@@ -37,9 +37,25 @@ namespace swe_3313_gui
                     if (!tableButton.Text.Contains("F"))
                     {
                         tableButton.Enabled = false;
+                        Color tableButtonPreviousColor = tableButton.BackColor;
+                        tableButton.BackColor = Color.FromArgb(70, tableButtonPreviousColor);
                     }
                 }
             }
+            else
+            {
+                foreach (Button tableButton in tableButtons)
+                {
+                    tableButton.Enabled = true;
+                }
+            }
+
+            foreach (Button tableButton in tableButtons)
+            {
+                tableButton.Click += tableButtonClicked;
+            }
+
+            BackButton.Click += BackButton_Click;
         }
 
         private Color GetColorFromStatus(TableStatus tableStatus)
@@ -60,6 +76,27 @@ namespace swe_3313_gui
         {
             ProgramControl.GetInstance().LoginView.Show();
             ProgramControl.GetInstance().TableView.Hide();
+        }
+        
+        private void tableButtonClicked(object sender, System.EventArgs e)
+        {
+            string tableId = (sender as Button).Text;
+            //Set the table instance to the ProgramControl.
+            ProgramControl.GetInstance().TableCurrentlySelected = 
+                ProgramControl.GetInstance().Restaurant.GetTableById(tableId);
+            
+            if (ProgramControl.GetInstance().TableCurrentlySelected.Status == TableStatus.Dirty)
+            {
+                ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Open;
+                ProgramControl.GetInstance().TableView.Hide();
+                ProgramControl.GetInstance().TableView.Show();
+            }
+            else
+            {
+                ProgramControl.GetInstance().TableView.Hide();
+                ProgramControl.GetInstance().OrderView.Show();
+            }
+
         }
 
         private void PopulateTableButtons()
