@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace swe_3313_gui
 {
@@ -48,6 +49,7 @@ namespace swe_3313_gui
         private void AddSpaghettiBtn_Click(object sender, EventArgs e)
         {
             ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().AddItem("Spaghetti and Meatballs", 12.00);
+            Debug.WriteLine(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder());
         }
 
         private void AddBurgerBtn_Click(object sender, EventArgs e)

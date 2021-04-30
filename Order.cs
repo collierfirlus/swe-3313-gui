@@ -7,22 +7,22 @@ namespace swe_3313_gui
     class Order
     {
         private int OrderNumber { get; set; }
-        private DateTime TimeSubmitted { get; set; }
         private bool Paid { get; set; }
         private string OrderTableId { get; set; }
-        private double TotalCost { get; set; }
-        private double AmountDue;
+        private double totalCost; 
+        public double TotalCost
+        {
+            get { return totalCost; }
+            set { value = totalCost; }
+        }
 
         List<OrderItem> SubmittedTableOrder;
         public List<OrderItem> ChangeTableOrder;
 
         public Order()
         {
-
-            //OrderTableId = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
-            TimeSubmitted = DateTime.Now;
             Paid = false;
-            TotalCost = 0;
+            totalCost = 0;
             SubmittedTableOrder = new List<OrderItem>();
             ChangeTableOrder = new List<OrderItem>(); 
         }
@@ -30,7 +30,7 @@ namespace swe_3313_gui
         public void AddItem(string name, double cost) //Execute when menu item is selected in MenuView
         {
             ChangeTableOrder.Add(new OrderItem(name, cost));
-            this.TotalCost += cost;
+            this.totalCost += cost;
             //update screen to show added item
         }
 
@@ -47,10 +47,10 @@ namespace swe_3313_gui
         public void CheckOut() //execute when Checkout button is pressed in OrderView
         {
             Paid = true;
-            AmountDue = 0.00;
             ProgramControl.GetInstance().TableCurrentlySelected.Status = "Dirty";
             SubmittedTableOrder.Clear();
             ChangeTableOrder.Clear();
+            totalCost = 0;
         }
 
         public void RemoveItem(OrderItem item)
@@ -63,7 +63,7 @@ namespace swe_3313_gui
             string returnThis = "";
             foreach(OrderItem item in ChangeTableOrder)
             {
-                returnThis += item.ItemName + "\n";
+                returnThis += item.ItemName + "..... $" + item.Cost + "\n";
             }
             return returnThis;
         }
@@ -73,7 +73,7 @@ namespace swe_3313_gui
             string returnThis = "";
             foreach (OrderItem item in SubmittedTableOrder)
             {
-                returnThis += item.ItemName + "\n";
+                returnThis += item.ItemName + "..... $" + item.Cost + "\n";
             }
             return returnThis;
         }

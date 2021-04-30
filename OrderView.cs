@@ -20,6 +20,8 @@ namespace swe_3313_gui
             ///when the screen becomes visible, then change the text
             base.OnVisibleChanged(e);
             this.TableNumLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.TableId;
+            this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -39,5 +41,13 @@ namespace swe_3313_gui
             ProgramControl.GetInstance().OrderView.Hide();
         }
 
+        private void SubmitOrderChangesButton_Click(object sender, EventArgs e)
+        {
+            ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().SubmitOrder();
+            this.SubmittedOrderLabel.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintSubmittedOrder();
+            this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            this.TotalAmtLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
+            this.AmtDueLabel.Text = "$" + Convert.ToString(ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().TotalCost);
+        }
     }
 }

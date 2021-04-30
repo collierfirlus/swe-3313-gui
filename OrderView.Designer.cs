@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.AmountDueLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.AmtDueLabel = new System.Windows.Forms.Label();
+            this.TotalAmtLabel = new System.Windows.Forms.Label();
             this.TableNumLabel = new System.Windows.Forms.Label();
             this.CheckOutButton = new System.Windows.Forms.Button();
             this.PrintTicketButton = new System.Windows.Forms.Button();
@@ -47,8 +47,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.AddItemButton = new System.Windows.Forms.Button();
             this.SubmitOrderChangesButton = new System.Windows.Forms.Button();
-            this.SubmittedOrderLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.CartDisplay = new System.Windows.Forms.Label();
+            this.SubmittedOrderLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -100,27 +101,27 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Total";
             // 
-            // AmountDueLabel
+            // AmtDueLabel
             // 
-            this.AmountDueLabel.AutoSize = true;
-            this.AmountDueLabel.BackColor = System.Drawing.Color.LightGray;
-            this.AmountDueLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AmountDueLabel.Location = new System.Drawing.Point(211, 388);
-            this.AmountDueLabel.Name = "AmountDueLabel";
-            this.AmountDueLabel.Size = new System.Drawing.Size(83, 37);
-            this.AmountDueLabel.TabIndex = 32;
-            this.AmountDueLabel.Text = "$0.00\r\n";
+            this.AmtDueLabel.AutoSize = true;
+            this.AmtDueLabel.BackColor = System.Drawing.Color.LightGray;
+            this.AmtDueLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AmtDueLabel.Location = new System.Drawing.Point(211, 388);
+            this.AmtDueLabel.Name = "AmtDueLabel";
+            this.AmtDueLabel.Size = new System.Drawing.Size(83, 37);
+            this.AmtDueLabel.TabIndex = 32;
+            this.AmtDueLabel.Text = "$0.00\r\n";
             // 
-            // label3
+            // TotalAmtLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LightGray;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(211, 314);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 37);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "$0.00\r\n";
+            this.TotalAmtLabel.AutoSize = true;
+            this.TotalAmtLabel.BackColor = System.Drawing.Color.LightGray;
+            this.TotalAmtLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TotalAmtLabel.Location = new System.Drawing.Point(211, 314);
+            this.TotalAmtLabel.Name = "TotalAmtLabel";
+            this.TotalAmtLabel.Size = new System.Drawing.Size(83, 37);
+            this.TotalAmtLabel.TabIndex = 33;
+            this.TotalAmtLabel.Text = "$0.00\r\n";
             // 
             // TableNumLabel
             // 
@@ -263,24 +264,33 @@
             this.SubmitOrderChangesButton.TabIndex = 48;
             this.SubmitOrderChangesButton.Text = "Submit\r\n";
             this.SubmitOrderChangesButton.UseVisualStyleBackColor = false;
-            // 
-            // SubmittedOrderLabel
-            // 
-            this.SubmittedOrderLabel.AutoSize = true;
-            this.SubmittedOrderLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SubmittedOrderLabel.Location = new System.Drawing.Point(518, 138);
-            this.SubmittedOrderLabel.Name = "SubmittedOrderLabel";
-            this.SubmittedOrderLabel.Size = new System.Drawing.Size(0, 37);
-            this.SubmittedOrderLabel.TabIndex = 49;
+            this.SubmitOrderChangesButton.Click += new System.EventHandler(this.SubmitOrderChangesButton_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(1043, 107);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 15);
+            this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 50;
-            //this.label10.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            // 
+            // CartDisplay
+            // 
+            this.CartDisplay.AutoSize = true;
+            this.CartDisplay.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CartDisplay.Location = new System.Drawing.Point(946, 107);
+            this.CartDisplay.Name = "CartDisplay";
+            this.CartDisplay.Size = new System.Drawing.Size(0, 32);
+            this.CartDisplay.TabIndex = 51;
+            // 
+            // SubmittedOrderLabel
+            // 
+            this.SubmittedOrderLabel.AutoSize = true;
+            this.SubmittedOrderLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SubmittedOrderLabel.Location = new System.Drawing.Point(420, 93);
+            this.SubmittedOrderLabel.Name = "SubmittedOrderLabel";
+            this.SubmittedOrderLabel.Size = new System.Drawing.Size(0, 32);
+            this.SubmittedOrderLabel.TabIndex = 52;
             // 
             // OrderView
             // 
@@ -288,8 +298,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1283, 708);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.SubmittedOrderLabel);
+            this.Controls.Add(this.CartDisplay);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.SubmitOrderChangesButton);
             this.Controls.Add(this.AddItemButton);
             this.Controls.Add(this.pictureBox2);
@@ -303,8 +314,8 @@
             this.Controls.Add(this.PrintTicketButton);
             this.Controls.Add(this.CheckOutButton);
             this.Controls.Add(this.TableNumLabel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.AmountDueLabel);
+            this.Controls.Add(this.TotalAmtLabel);
+            this.Controls.Add(this.AmtDueLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label1);
@@ -325,8 +336,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label AmountDueLabel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label AmtDueLabel;
+        private System.Windows.Forms.Label TotalAmtLabel;
         private System.Windows.Forms.Label TableNumLabel;
         private System.Windows.Forms.Button CheckOutButton;
         private System.Windows.Forms.Button PrintTicketButton;
@@ -340,7 +351,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button AddItemButton;
         private System.Windows.Forms.Button SubmitOrderChangesButton;
-        private System.Windows.Forms.Label SubmittedOrderLabel;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label CartDisplay;
+        private System.Windows.Forms.Label SubmittedOrderLabel;
     }
 }
