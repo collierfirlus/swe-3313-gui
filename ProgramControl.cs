@@ -46,6 +46,34 @@ namespace swe_3313_gui
         private List<Table> GetSeedTables() //1F-6F for now, add rest later
         {
             List<Table> tables = new List<Table>();
+
+            tables.Add(new Table("1A", 4));
+            tables.Add(new Table("2A", 4));
+            tables.Add(new Table("3A", 4));
+            tables.Add(new Table("4A", 4));
+            tables.Add(new Table("5A", 4));
+            tables.Add(new Table("6A", 4));
+            
+            tables.Add(new Table("1B", 4));
+            tables.Add(new Table("2B", 4));
+            tables.Add(new Table("3B", 4));
+            tables.Add(new Table("4B", 4));
+            tables.Add(new Table("5B", 4));
+            tables.Add(new Table("6B", 4));
+            
+            tables.Add(new Table("5C", 4));
+            tables.Add(new Table("6C", 4));
+            
+            tables.Add(new Table("5D", 4));
+            tables.Add(new Table("6D", 4));
+            
+            tables.Add(new Table("1E", 4));
+            tables.Add(new Table("2E", 4));
+            tables.Add(new Table("3E", 4));
+            tables.Add(new Table("4E", 4));
+            tables.Add(new Table("5E", 4));
+            tables.Add(new Table("6E", 4));
+            
             tables.Add(new Table("1F", 4));
             tables.Add(new Table("2F", 4));
             tables.Add(new Table("3F", 4));
