@@ -81,7 +81,7 @@ namespace swe_3313_gui
             this.BarLabelText3 = new System.Windows.Forms.Label();
             this.BarLabelText4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize) (this.BarGreyBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // BarGreyBackground
@@ -349,6 +349,7 @@ namespace swe_3313_gui
             // BackButton
             // 
             this.BackButton.BackColor = System.Drawing.Color.Maroon;
+            this.BackButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackButton.Location = new System.Drawing.Point(496, 695);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(272, 47);
@@ -560,7 +561,7 @@ namespace swe_3313_gui
             this.Name = "TableView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableView";
-            ((System.ComponentModel.ISupportInitialize) (this.BarGreyBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarGreyBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

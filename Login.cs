@@ -21,7 +21,6 @@ namespace swe_3313_gui
         {
             ///when the screen becomes visible, then change the text
             base.OnVisibleChanged(e);
-            //ProgramControl.GetInstance().Restaurant.LoadEmployees();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,7 +33,6 @@ namespace swe_3313_gui
             string usernameInput = usernameBox.Text;
             string passwordInput = passwordBox.Text;
 
-            //login to be changed later by using an Employee object in the ProgramControl class
 
             if (ProgramControl.GetInstance().Restaurant.AuthenticateEmployee(usernameInput, passwordInput))
             {

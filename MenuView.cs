@@ -26,20 +26,10 @@ namespace swe_3313_gui
             ProgramControl.GetInstance().menuView.Hide();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             ProgramControl.GetInstance().OrderView.Show();
             ProgramControl.GetInstance().menuView.Hide();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -51,12 +41,6 @@ namespace swe_3313_gui
         {
             ProgramControl.GetInstance().soupsaladView.Show();
             ProgramControl.GetInstance().menuView.Hide();
-        }
-
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void DessertButton_Click(object sender, EventArgs e)

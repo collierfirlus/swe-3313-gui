@@ -7,13 +7,11 @@ namespace swe_3313_gui
 {
     class ProgramControl ///singleton data class used to instantiate objects
     {
-        //TODO make getters & setters, public BAD
-
         public Table TableCurrentlySelected = new Table("_init_table", 0);
         public Restaurant Restaurant = new Restaurant();
         public Employee EmployeeSignedIn;
 
-        //Screens
+        ///Screens
         public Login LoginView = new Login();
         public TableView TableView = new TableView();
         public OrderView OrderView = new OrderView();
@@ -27,14 +25,11 @@ namespace swe_3313_gui
 
         public static ProgramControl GetInstance()
         {
-            //lock (padlock)
-            //{
                 if (instance == null)
                 {
                     instance = new ProgramControl();
                 }
                 return instance;
-            //}
         }
 
         private ProgramControl()
@@ -42,7 +37,7 @@ namespace swe_3313_gui
             Restaurant.SetTables(GetSeedTables());
         }
 
-        private List<Table> GetSeedTables() //1F-6F for now, add rest later
+        private List<Table> GetSeedTables() 
         {
             List<Table> tables = new List<Table>();
 

@@ -84,7 +84,7 @@ namespace swe_3313_gui
             this.LoginButton.BackColor = System.Drawing.Color.Maroon;
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LoginButton.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.LoginButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LoginButton.Location = new System.Drawing.Point(585, 372);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(111, 43);

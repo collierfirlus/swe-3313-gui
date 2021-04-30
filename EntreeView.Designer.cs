@@ -52,9 +52,10 @@ namespace swe_3313_gui
             this.FriedPickDescLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FriedPickDescLbl.Location = new System.Drawing.Point(313, 392);
             this.FriedPickDescLbl.Name = "FriedPickDescLbl";
-            this.FriedPickDescLbl.Size = new System.Drawing.Size(133, 51);
+            this.FriedPickDescLbl.Size = new System.Drawing.Size(470, 51);
             this.FriedPickDescLbl.TabIndex = 48;
-            this.FriedPickDescLbl.Text = "bruger n chees mmm\r\n\r\n$13.00";
+            this.FriedPickDescLbl.Text = "Thick and juicy burger with toasted buns, American cheese, and smoked bacon.\r\n\r\n$" +
+    "13.00";
             // 
             // FriedPickLbl
             // 

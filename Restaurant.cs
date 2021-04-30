@@ -11,11 +11,6 @@ namespace swe_3313_gui
         public Queue<Order> ordersToFulfil = new Queue<Order>();
         public List<Employee> Employees;
         
-        // public void LoadEmployees()
-        // {
-        //     Employees = GetSeedEmployees();
-        // }
-
         public Restaurant()
         {
             Employees = GetSeedEmployees();

@@ -52,9 +52,9 @@ namespace swe_3313_gui
             this.FriedPickDescLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FriedPickDescLbl.Location = new System.Drawing.Point(316, 394);
             this.FriedPickDescLbl.Name = "FriedPickDescLbl";
-            this.FriedPickDescLbl.Size = new System.Drawing.Size(133, 51);
+            this.FriedPickDescLbl.Size = new System.Drawing.Size(168, 51);
             this.FriedPickDescLbl.TabIndex = 64;
-            this.FriedPickDescLbl.Text = "bruger n chees mmm\r\n\r\n$6.00";
+            this.FriedPickDescLbl.Text = "Slice of rich chocolate cake.\r\n\r\n$6.00";
             // 
             // FriedPickLbl
             // 
@@ -185,10 +185,9 @@ namespace swe_3313_gui
             this.MozzDescLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MozzDescLbl.Location = new System.Drawing.Point(316, 77);
             this.MozzDescLbl.Name = "MozzDescLbl";
-            this.MozzDescLbl.Size = new System.Drawing.Size(652, 51);
+            this.MozzDescLbl.Size = new System.Drawing.Size(148, 51);
             this.MozzDescLbl.TabIndex = 62;
-            this.MozzDescLbl.Text = "Tender beef and pork meatballs are simmered in an easy homemade tomato sauce and " +
-    "served with spaghetti.\r\n\r\n$7.00\r\n";
+            this.MozzDescLbl.Text = "Slice of rich cheesecake.\r\n\r\n$7.00\r\n";
             // 
             // MozzSticksLbl
             // 

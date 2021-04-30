@@ -25,16 +25,15 @@ namespace swe_3313_gui
             ChangeTableOrder = new List<OrderItem>(); 
         }
 
-        public void AddItem(string name, double cost) //Execute when menu item is selected in MenuView
+        public void AddItem(string name, double cost) ///Execute when menu item is selected in MenuView
         {
             ChangeTableOrder.Add(new OrderItem(name, cost));
             this.totalCost += cost;
-            //update screen to show added item
         }
 
-        public void SubmitOrder() //Execute when Submit button is pressed in OrderView
+        public void SubmitOrder() ///Execute when Submit button is pressed in OrderView
         {
-            //this would also send order to cooks screen
+            ///this would also send order to cooks screen
             foreach(OrderItem item in ChangeTableOrder)
             {
                 SubmittedTableOrder.Add(item);
@@ -43,18 +42,13 @@ namespace swe_3313_gui
             ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Occupied;
         }
 
-        public void CheckOut() //execute when Checkout button is pressed in OrderView
+        public void CheckOut() ///execute when Checkout button is pressed in OrderView
         {
             paid = true;
             ProgramControl.GetInstance().TableCurrentlySelected.Status = TableStatus.Dirty;
             SubmittedTableOrder.Clear();
             ChangeTableOrder.Clear();
             totalCost = 0;
-        }
-
-        public void RemoveItem(OrderItem item)
-        {
-            //Remove Item from order
         }
 
         public string PrintChangeOrder()

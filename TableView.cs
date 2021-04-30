@@ -81,7 +81,7 @@ namespace swe_3313_gui
         private void tableButtonClicked(object sender, System.EventArgs e)
         {
             string tableId = (sender as Button).Text;
-            //Set the table instance to the ProgramControl.
+            ///Set the table instance to the ProgramControl.
             ProgramControl.GetInstance().TableCurrentlySelected = 
                 ProgramControl.GetInstance().Restaurant.GetTableById(tableId);
             

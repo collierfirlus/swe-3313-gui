@@ -58,15 +58,17 @@ namespace swe_3313_gui
             ProgramControl.GetInstance().Restaurant.PrintOrdersToFulfil();
         }
 
-        private void SubmittedOrderLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void DeleteItemButton_Click(object sender, EventArgs e)
         {
-            ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().ChangeTableOrder.RemoveAt(0);
-            this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            if (ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().ChangeTableOrder.Count == 0)
+            {
+                ///do nothing. can't delete from an empty list
+            }
+            else
+            {
+                ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().ChangeTableOrder.RemoveAt(0);
+                this.CartDisplay.Text = ProgramControl.GetInstance().TableCurrentlySelected.GetTableOrder().PrintChangeOrder();
+            }
         }
     }
 }

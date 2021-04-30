@@ -126,7 +126,6 @@ namespace swe_3313_gui
             this.AppetizerButton.TabIndex = 6;
             this.AppetizerButton.Text = "Appetizers ";
             this.AppetizerButton.UseVisualStyleBackColor = false;
-            this.AppetizerButton.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
