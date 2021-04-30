@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace swe_3313_gui
 {
     class Order
@@ -18,6 +17,12 @@ namespace swe_3313_gui
 
         List<OrderItem> SubmittedTableOrder;
         public List<OrderItem> ChangeTableOrder;
+
+        public List<OrderItem> changeTableOrder
+        {
+            get { return ChangeTableOrder; }
+            set { value = ChangeTableOrder; }
+        }
 
         public Order()
         {

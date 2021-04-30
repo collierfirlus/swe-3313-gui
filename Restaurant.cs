@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 
 namespace swe_3313_gui
 {
     class Restaurant
     {
         List<Table> Tables = new List<Table>();
+        Queue<OrderItem> OrderUp = new Queue<OrderItem>();
 
         public Restaurant() { }
 
@@ -38,6 +40,15 @@ namespace swe_3313_gui
             return this.Tables;
         }
 
+        public void AddToQueue(List<OrderItem> orders)
+        {
+            foreach(OrderItem item in orders)
+            {
+                OrderUp.Enqueue(item);
+                Debug.WriteLine(item.ItemName + "\n");
+                Console.WriteLine("test");
+            }
+        }
 
     }
 }
